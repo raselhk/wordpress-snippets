@@ -27,7 +27,7 @@ echo "  diff $TMP/bot.html $TMP/user.html | head -50"
 
 echo
 echo "== 2. Spam words in the Googlebot copy =="
-grep -oiE "casino|viagra|cialis|pharmacy|payday|slot gacor|porn" "$TMP/bot.html" | sort | uniq -c | sort -rn | head
+grep -oiwE "casino|viagra|cialis|pharmacy|payday|slot gacor|porn" "$TMP/bot.html" | sort | uniq -c | sort -rn | head
 
 echo
 echo "== 3. Status and redirect headers as Googlebot =="
