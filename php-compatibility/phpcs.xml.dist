@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ruleset name="SWD PHP compatibility">
+	<description>Check code for PHP 8.2 and newer with PHPCompatibilityWP.</description>
+
+	<!-- Pass the folder to scan on the command line: vendor/bin/phpcs path/to/plugin -->
+	<arg name="extensions" value="php"/>
+	<arg name="colors"/>
+	<arg value="ps"/>
+
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+
+	<config name="testVersion" value="8.2-"/>
+	<rule ref="PHPCompatibilityWP"/>
+</ruleset>

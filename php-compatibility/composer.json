@@ -1,0 +1,21 @@
+{
+    "name": "raselhk/wordpress-php-compatibility",
+    "description": "PHPCompatibilityWP setup for checking WordPress plugins on PHP 8.2 and newer.",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Rasel Hakkani",
+            "homepage": "https://swiftwebdev.com/"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpcompatibility/phpcompatibility-wp": "^3.0@dev"
+    }
+}
